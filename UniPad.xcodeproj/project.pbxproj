@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB27F4D22502AC5700CA5648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D12502AC5700CA5648 /* AppDelegate.swift */; };
-		AB27F4D42502AC5700CA5648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D32502AC5700CA5648 /* SceneDelegate.swift */; };
-		AB27F4D62502AC5700CA5648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D52502AC5700CA5648 /* ViewController.swift */; };
-		AB27F4D92502AC5700CA5648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4D72502AC5700CA5648 /* Main.storyboard */; };
 		AB27F4DB2502AC5800CA5648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4DA2502AC5800CA5648 /* Assets.xcassets */; };
 		AB27F4DE2502AC5800CA5648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4DC2502AC5800CA5648 /* LaunchScreen.storyboard */; };
+		AB6E0ED525037EB400D6AF90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D52502AC5700CA5648 /* ViewController.swift */; };
+		AB6E0ED625037EB900D6AF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D12502AC5700CA5648 /* AppDelegate.swift */; };
+		AB6E0ED725037EBE00D6AF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D32502AC5700CA5648 /* SceneDelegate.swift */; };
+		AB6E0ED825037ECC00D6AF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4D72502AC5700CA5648 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		AB27F4D82502AC5700CA5648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB27F4DA2502AC5800CA5648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB27F4DD2502AC5800CA5648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AB27F4DF2502AC5800CA5648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6E0ED125037D8800D6AF90 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +56,13 @@
 		AB27F4D02502AC5700CA5648 /* UniPad */ = {
 			isa = PBXGroup;
 			children = (
+				AB6E0ED125037D8800D6AF90 /* Info.plist */,
 				AB27F4D12502AC5700CA5648 /* AppDelegate.swift */,
 				AB27F4D32502AC5700CA5648 /* SceneDelegate.swift */,
 				AB27F4D52502AC5700CA5648 /* ViewController.swift */,
 				AB27F4D72502AC5700CA5648 /* Main.storyboard */,
 				AB27F4DA2502AC5800CA5648 /* Assets.xcassets */,
 				AB27F4DC2502AC5800CA5648 /* LaunchScreen.storyboard */,
-				AB27F4DF2502AC5800CA5648 /* Info.plist */,
 			);
 			path = UniPad;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB6E0ED825037ECC00D6AF90 /* Main.storyboard in Resources */,
 				AB27F4DE2502AC5800CA5648 /* LaunchScreen.storyboard in Resources */,
 				AB27F4DB2502AC5800CA5648 /* Assets.xcassets in Resources */,
-				AB27F4D92502AC5700CA5648 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB27F4D62502AC5700CA5648 /* ViewController.swift in Sources */,
-				AB27F4D22502AC5700CA5648 /* AppDelegate.swift in Sources */,
-				AB27F4D42502AC5700CA5648 /* SceneDelegate.swift in Sources */,
+				AB6E0ED725037EBE00D6AF90 /* SceneDelegate.swift in Sources */,
+				AB6E0ED625037EB900D6AF90 /* AppDelegate.swift in Sources */,
+				AB6E0ED525037EB400D6AF90 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,13 +288,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNS5K6T85;
-				INFOPLIST_FILE = QRWallet/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UniPad/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mihaialexandruteodor.QRWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = mihaialexandruteodor.UniPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,13 +308,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNS5K6T85;
-				INFOPLIST_FILE = QRWallet/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UniPad/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mihaialexandruteodor.QRWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = mihaialexandruteodor.UniPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
