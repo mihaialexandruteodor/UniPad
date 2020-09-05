@@ -1,5 +1,5 @@
 # UniPad
-IOS app for taking quick notes
+IOS app for taking quick notes using the camera
 
 
 Thanks:
