@@ -13,6 +13,9 @@
 		AB6E0ED625037EB900D6AF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D12502AC5700CA5648 /* AppDelegate.swift */; };
 		AB6E0ED725037EBE00D6AF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D32502AC5700CA5648 /* SceneDelegate.swift */; };
 		AB6E0ED825037ECC00D6AF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4D72502AC5700CA5648 /* Main.storyboard */; };
+		ABAC05A32504B37300D901D8 /* OcrTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC05A22504B37300D901D8 /* OcrTextView.swift */; };
+		ABAC05A52504B3A300D901D8 /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC05A42504B3A300D901D8 /* ScanButton.swift */; };
+		ABAC05A72504B3C400D901D8 /* ScanImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC05A62504B3C400D901D8 /* ScanImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AB27F4DA2502AC5800CA5648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB27F4DD2502AC5800CA5648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB6E0ED125037D8800D6AF90 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAC05A22504B37300D901D8 /* OcrTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrTextView.swift; sourceTree = "<group>"; };
+		ABAC05A42504B3A300D901D8 /* ScanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
+		ABAC05A62504B3C400D901D8 /* ScanImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				AB27F4D72502AC5700CA5648 /* Main.storyboard */,
 				AB27F4DA2502AC5800CA5648 /* Assets.xcassets */,
 				AB27F4DC2502AC5800CA5648 /* LaunchScreen.storyboard */,
+				ABAC05A22504B37300D901D8 /* OcrTextView.swift */,
+				ABAC05A42504B3A300D901D8 /* ScanButton.swift */,
+				ABAC05A62504B3C400D901D8 /* ScanImageView.swift */,
 			);
 			path = UniPad;
 			sourceTree = "<group>";
@@ -137,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAC05A52504B3A300D901D8 /* ScanButton.swift in Sources */,
+				ABAC05A32504B37300D901D8 /* OcrTextView.swift in Sources */,
 				AB6E0ED725037EBE00D6AF90 /* SceneDelegate.swift in Sources */,
 				AB6E0ED625037EB900D6AF90 /* AppDelegate.swift in Sources */,
 				AB6E0ED525037EB400D6AF90 /* ViewController.swift in Sources */,
+				ABAC05A72504B3C400D901D8 /* ScanImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

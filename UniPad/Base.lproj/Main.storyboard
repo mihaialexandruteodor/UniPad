@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,59 +12,35 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRWallet" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UniPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KuS-3e-NrB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgB-aV-ACg">
-                                <rect key="frame" x="20" y="74" width="374" height="508"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-sG-FEd">
+                                <rect key="frame" x="50" y="84" width="314" height="448"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jth-zt-gJ2">
-                                <rect key="frame" x="40" y="634.5" width="150" height="145.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="f6Y-YS-xOK"/>
-                                    <constraint firstAttribute="height" constant="150" id="pqM-2o-2z2"/>
-                                </constraints>
-                                <state key="normal">
-                                    <imageReference key="backgroundImage" image="camera.circle.fill" catalog="system" symbolScale="small"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTakePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Q5-uf-d24"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nip-TD-a1q">
-                                <rect key="frame" x="250" y="602" width="144" height="230"/>
-                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KT1-YZ-t4z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nip-TD-a1q" secondAttribute="bottom" constant="30" id="Bv1-y4-ghO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cgB-aV-ACg" secondAttribute="trailing" constant="20" id="IUh-2W-3mx"/>
-                            <constraint firstAttribute="trailing" secondItem="Nip-TD-a1q" secondAttribute="trailing" constant="20" id="LTD-iR-BVI"/>
-                            <constraint firstItem="Nip-TD-a1q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="250" id="NBN-7Z-cLl"/>
-                            <constraint firstItem="Jth-zt-gJ2" firstAttribute="top" secondItem="cgB-aV-ACg" secondAttribute="bottom" constant="50" id="RvJ-HI-T8z"/>
-                            <constraint firstItem="cgB-aV-ACg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Vf7-aX-sxc"/>
-                            <constraint firstItem="Nip-TD-a1q" firstAttribute="top" secondItem="cgB-aV-ACg" secondAttribute="bottom" constant="20" id="gWb-fb-x8a"/>
-                            <constraint firstItem="Jth-zt-gJ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="lKe-dL-Hrh"/>
-                            <constraint firstItem="cgB-aV-ACg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vrt-Il-588"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cgB-aV-ACg" secondAttribute="bottom" constant="280" id="zXH-IN-TOZ"/>
+                            <constraint firstItem="GgJ-sG-FEd" firstAttribute="leading" secondItem="KT1-YZ-t4z" secondAttribute="leading" constant="50" id="LEG-0U-oC2"/>
+                            <constraint firstItem="KT1-YZ-t4z" firstAttribute="trailing" secondItem="GgJ-sG-FEd" secondAttribute="trailing" constant="50" id="R01-8W-OLp"/>
+                            <constraint firstItem="GgJ-sG-FEd" firstAttribute="top" secondItem="KT1-YZ-t4z" secondAttribute="top" constant="40" id="YXa-O1-LKg"/>
+                            <constraint firstItem="KT1-YZ-t4z" firstAttribute="bottom" secondItem="GgJ-sG-FEd" secondAttribute="bottom" constant="330" id="qKo-rk-1bu"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="captureImageView" destination="Nip-TD-a1q" id="ft3-Ud-Oik"/>
-                        <outlet property="previewView" destination="cgB-aV-ACg" id="frK-Bg-5Kj"/>
+                        <outlet property="previewView" destination="GgJ-sG-FEd" id="kKL-mq-hCI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="89"/>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
-        <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
