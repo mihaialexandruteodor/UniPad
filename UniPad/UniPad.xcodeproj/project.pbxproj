@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		AB6F0C95250681B300E131B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0C94250681B300E131B1 /* AppDelegate.swift */; };
 		AB6F0C97250681B300E131B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0C96250681B300E131B1 /* SceneDelegate.swift */; };
-		AB6F0C99250681B300E131B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0C98250681B300E131B1 /* ViewController.swift */; };
 		AB6F0C9C250681B300E131B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6F0C9A250681B300E131B1 /* Main.storyboard */; };
 		AB6F0C9E250681B300E131B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6F0C9D250681B300E131B1 /* Assets.xcassets */; };
 		AB6F0CA1250681B300E131B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6F0C9F250681B300E131B1 /* LaunchScreen.storyboard */; };
+		AB6F0CAC250683AD00E131B1 /* DocProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0CAA250682FC00E131B1 /* DocProfileViewController.swift */; };
+		ABEA3C6E250686C900E02C7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0C98250681B300E131B1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AB6F0C9D250681B300E131B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB6F0CA0250681B300E131B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB6F0CA2250681B300E131B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6F0CAA250682FC00E131B1 /* DocProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		AB6F0C93250681B300E131B1 /* UniPad */ = {
 			isa = PBXGroup;
 			children = (
+				AB6F0CAA250682FC00E131B1 /* DocProfileViewController.swift */,
 				AB6F0C94250681B300E131B1 /* AppDelegate.swift */,
 				AB6F0C96250681B300E131B1 /* SceneDelegate.swift */,
 				AB6F0C98250681B300E131B1 /* ViewController.swift */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB6F0C99250681B300E131B1 /* ViewController.swift in Sources */,
+				ABEA3C6E250686C900E02C7C /* ViewController.swift in Sources */,
 				AB6F0C95250681B300E131B1 /* AppDelegate.swift in Sources */,
 				AB6F0C97250681B300E131B1 /* SceneDelegate.swift in Sources */,
+				AB6F0CAC250683AD00E131B1 /* DocProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNS5K6T85;
 				INFOPLIST_FILE = UniPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNS5K6T85;
 				INFOPLIST_FILE = UniPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
