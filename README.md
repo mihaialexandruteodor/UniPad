@@ -1,4 +1,4 @@
-<img src="./Unipad/UniPad/Assets.xcassets/AppIcon.appiconset/UniPad icon-1.png"
+<img src="./UniPad/UniPad/Assets.xcassets/AppIcon.appiconset/UniPad icon-1.png"
      alt="UniPad Icon"
      style="float: left; margin-right: 10px;"
      width="40" height="40" />
