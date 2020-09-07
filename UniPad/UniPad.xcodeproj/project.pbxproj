@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB27F4DB2502AC5800CA5648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4DA2502AC5800CA5648 /* Assets.xcassets */; };
-		AB27F4DE2502AC5800CA5648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4DC2502AC5800CA5648 /* LaunchScreen.storyboard */; };
-		AB6E0ED525037EB400D6AF90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D52502AC5700CA5648 /* ViewController.swift */; };
-		AB6E0ED625037EB900D6AF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D12502AC5700CA5648 /* AppDelegate.swift */; };
-		AB6E0ED725037EBE00D6AF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27F4D32502AC5700CA5648 /* SceneDelegate.swift */; };
-		AB6E0ED825037ECC00D6AF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27F4D72502AC5700CA5648 /* Main.storyboard */; };
-		ABAC05A32504B37300D901D8 /* OcrTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC05A22504B37300D901D8 /* OcrTextView.swift */; };
-		ABAC05A52504B3A300D901D8 /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC05A42504B3A300D901D8 /* ScanButton.swift */; };
-		ABAC05A72504B3C400D901D8 /* ScanImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC05A62504B3C400D901D8 /* ScanImageView.swift */; };
+		AB6F0C95250681B300E131B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0C94250681B300E131B1 /* AppDelegate.swift */; };
+		AB6F0C97250681B300E131B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0C96250681B300E131B1 /* SceneDelegate.swift */; };
+		AB6F0C99250681B300E131B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F0C98250681B300E131B1 /* ViewController.swift */; };
+		AB6F0C9C250681B300E131B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6F0C9A250681B300E131B1 /* Main.storyboard */; };
+		AB6F0C9E250681B300E131B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6F0C9D250681B300E131B1 /* Assets.xcassets */; };
+		AB6F0CA1250681B300E131B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6F0C9F250681B300E131B1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB27F4CE2502AC5700CA5648 /* UniPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB27F4D12502AC5700CA5648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB27F4D32502AC5700CA5648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB27F4D52502AC5700CA5648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB27F4D82502AC5700CA5648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AB27F4DA2502AC5800CA5648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB27F4DD2502AC5800CA5648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AB6E0ED125037D8800D6AF90 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABAC05A22504B37300D901D8 /* OcrTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrTextView.swift; sourceTree = "<group>"; };
-		ABAC05A42504B3A300D901D8 /* ScanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
-		ABAC05A62504B3C400D901D8 /* ScanImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageView.swift; sourceTree = "<group>"; };
+		AB6F0C91250681B300E131B1 /* UniPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6F0C94250681B300E131B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB6F0C96250681B300E131B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB6F0C98250681B300E131B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB6F0C9B250681B300E131B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB6F0C9D250681B300E131B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB6F0CA0250681B300E131B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB6F0CA2250681B300E131B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB27F4CB2502AC5700CA5648 /* Frameworks */ = {
+		AB6F0C8E250681B300E131B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,35 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB27F4C52502AC5700CA5648 = {
+		AB6F0C88250681B300E131B1 = {
 			isa = PBXGroup;
 			children = (
-				AB27F4D02502AC5700CA5648 /* UniPad */,
-				AB27F4CF2502AC5700CA5648 /* Products */,
+				AB6F0C93250681B300E131B1 /* UniPad */,
+				AB6F0C92250681B300E131B1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AB27F4CF2502AC5700CA5648 /* Products */ = {
+		AB6F0C92250681B300E131B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB27F4CE2502AC5700CA5648 /* UniPad.app */,
+				AB6F0C91250681B300E131B1 /* UniPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB27F4D02502AC5700CA5648 /* UniPad */ = {
+		AB6F0C93250681B300E131B1 /* UniPad */ = {
 			isa = PBXGroup;
 			children = (
-				AB6E0ED125037D8800D6AF90 /* Info.plist */,
-				AB27F4D12502AC5700CA5648 /* AppDelegate.swift */,
-				AB27F4D32502AC5700CA5648 /* SceneDelegate.swift */,
-				AB27F4D52502AC5700CA5648 /* ViewController.swift */,
-				AB27F4D72502AC5700CA5648 /* Main.storyboard */,
-				AB27F4DA2502AC5800CA5648 /* Assets.xcassets */,
-				AB27F4DC2502AC5800CA5648 /* LaunchScreen.storyboard */,
-				ABAC05A22504B37300D901D8 /* OcrTextView.swift */,
-				ABAC05A42504B3A300D901D8 /* ScanButton.swift */,
-				ABAC05A62504B3C400D901D8 /* ScanImageView.swift */,
+				AB6F0C94250681B300E131B1 /* AppDelegate.swift */,
+				AB6F0C96250681B300E131B1 /* SceneDelegate.swift */,
+				AB6F0C98250681B300E131B1 /* ViewController.swift */,
+				AB6F0C9A250681B300E131B1 /* Main.storyboard */,
+				AB6F0C9D250681B300E131B1 /* Assets.xcassets */,
+				AB6F0C9F250681B300E131B1 /* LaunchScreen.storyboard */,
+				AB6F0CA2250681B300E131B1 /* Info.plist */,
 			);
 			path = UniPad;
 			sourceTree = "<group>";
@@ -79,38 +70,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB27F4CD2502AC5700CA5648 /* UniPad */ = {
+		AB6F0C90250681B300E131B1 /* UniPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB27F4E22502AC5800CA5648 /* Build configuration list for PBXNativeTarget "UniPad" */;
+			buildConfigurationList = AB6F0CA5250681B300E131B1 /* Build configuration list for PBXNativeTarget "UniPad" */;
 			buildPhases = (
-				AB27F4CA2502AC5700CA5648 /* Sources */,
-				AB27F4CB2502AC5700CA5648 /* Frameworks */,
-				AB27F4CC2502AC5700CA5648 /* Resources */,
+				AB6F0C8D250681B300E131B1 /* Sources */,
+				AB6F0C8E250681B300E131B1 /* Frameworks */,
+				AB6F0C8F250681B300E131B1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = UniPad;
-			productName = QRWallet;
-			productReference = AB27F4CE2502AC5700CA5648 /* UniPad.app */;
+			productName = UniPad;
+			productReference = AB6F0C91250681B300E131B1 /* UniPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB27F4C62502AC5700CA5648 /* Project object */ = {
+		AB6F0C89250681B300E131B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					AB27F4CD2502AC5700CA5648 = {
+					AB6F0C90250681B300E131B1 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
-			buildConfigurationList = AB27F4C92502AC5700CA5648 /* Build configuration list for PBXProject "UniPad" */;
+			buildConfigurationList = AB6F0C8C250681B300E131B1 /* Build configuration list for PBXProject "UniPad" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,58 +109,55 @@
 				en,
 				Base,
 			);
-			mainGroup = AB27F4C52502AC5700CA5648;
-			productRefGroup = AB27F4CF2502AC5700CA5648 /* Products */;
+			mainGroup = AB6F0C88250681B300E131B1;
+			productRefGroup = AB6F0C92250681B300E131B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB27F4CD2502AC5700CA5648 /* UniPad */,
+				AB6F0C90250681B300E131B1 /* UniPad */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AB27F4CC2502AC5700CA5648 /* Resources */ = {
+		AB6F0C8F250681B300E131B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB6E0ED825037ECC00D6AF90 /* Main.storyboard in Resources */,
-				AB27F4DE2502AC5800CA5648 /* LaunchScreen.storyboard in Resources */,
-				AB27F4DB2502AC5800CA5648 /* Assets.xcassets in Resources */,
+				AB6F0CA1250681B300E131B1 /* LaunchScreen.storyboard in Resources */,
+				AB6F0C9E250681B300E131B1 /* Assets.xcassets in Resources */,
+				AB6F0C9C250681B300E131B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AB27F4CA2502AC5700CA5648 /* Sources */ = {
+		AB6F0C8D250681B300E131B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAC05A52504B3A300D901D8 /* ScanButton.swift in Sources */,
-				ABAC05A32504B37300D901D8 /* OcrTextView.swift in Sources */,
-				AB6E0ED725037EBE00D6AF90 /* SceneDelegate.swift in Sources */,
-				AB6E0ED625037EB900D6AF90 /* AppDelegate.swift in Sources */,
-				AB6E0ED525037EB400D6AF90 /* ViewController.swift in Sources */,
-				ABAC05A72504B3C400D901D8 /* ScanImageView.swift in Sources */,
+				AB6F0C99250681B300E131B1 /* ViewController.swift in Sources */,
+				AB6F0C95250681B300E131B1 /* AppDelegate.swift in Sources */,
+				AB6F0C97250681B300E131B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB27F4D72502AC5700CA5648 /* Main.storyboard */ = {
+		AB6F0C9A250681B300E131B1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB27F4D82502AC5700CA5648 /* Base */,
+				AB6F0C9B250681B300E131B1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AB27F4DC2502AC5800CA5648 /* LaunchScreen.storyboard */ = {
+		AB6F0C9F250681B300E131B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB27F4DD2502AC5800CA5648 /* Base */,
+				AB6F0CA0250681B300E131B1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -177,7 +165,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AB27F4E02502AC5800CA5648 /* Debug */ = {
+		AB6F0CA3250681B300E131B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		AB27F4E12502AC5800CA5648 /* Release */ = {
+		AB6F0CA4250681B300E131B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,15 +281,14 @@
 			};
 			name = Release;
 		};
-		AB27F4E32502AC5800CA5648 /* Debug */ = {
+		AB6F0CA6250681B300E131B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNS5K6T85;
-				INFOPLIST_FILE = "$(SRCROOT)/UniPad/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				INFOPLIST_FILE = UniPad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,15 +300,14 @@
 			};
 			name = Debug;
 		};
-		AB27F4E42502AC5800CA5648 /* Release */ = {
+		AB6F0CA7250681B300E131B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TNS5K6T85;
-				INFOPLIST_FILE = "$(SRCROOT)/UniPad/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				INFOPLIST_FILE = UniPad/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB27F4C92502AC5700CA5648 /* Build configuration list for PBXProject "UniPad" */ = {
+		AB6F0C8C250681B300E131B1 /* Build configuration list for PBXProject "UniPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB27F4E02502AC5800CA5648 /* Debug */,
-				AB27F4E12502AC5800CA5648 /* Release */,
+				AB6F0CA3250681B300E131B1 /* Debug */,
+				AB6F0CA4250681B300E131B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB27F4E22502AC5800CA5648 /* Build configuration list for PBXNativeTarget "UniPad" */ = {
+		AB6F0CA5250681B300E131B1 /* Build configuration list for PBXNativeTarget "UniPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB27F4E32502AC5800CA5648 /* Debug */,
-				AB27F4E42502AC5800CA5648 /* Release */,
+				AB6F0CA6250681B300E131B1 /* Debug */,
+				AB6F0CA7250681B300E131B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB27F4C62502AC5700CA5648 /* Project object */;
+	rootObject = AB6F0C89250681B300E131B1 /* Project object */;
 }

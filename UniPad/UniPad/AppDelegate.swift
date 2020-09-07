@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  QRWallet
+//  UniPad
 //
-//  Created by teo on 04.09.2020.
+//  Created by teo on 07.09.2020.
 //
 
 import UIKit
