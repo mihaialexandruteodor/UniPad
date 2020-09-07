@@ -8,6 +8,7 @@
 import UIKit
 import Vision
 import VisionKit
+import PDFKit
 
 class DocProfileViewController: UIViewController, VNDocumentCameraViewControllerDelegate  {
 
@@ -44,6 +45,37 @@ class DocProfileViewController: UIViewController, VNDocumentCameraViewController
          self.present(documentCameraViewController, animated: true, completion: nil)
     }
     
+    @IBAction func sharePDF(_ sender: Any) {
+        let pdfCreator = PDFCreator(
+         title: "test",
+         body: recognizedText,
+         image: docImage,
+         contact: "github.com/mihaialexandruteodor"
+            
+       )
+       let pdfData = pdfCreator.createFlyer()
+       let shareVc = UIActivityViewController(
+         activityItems: [pdfData],
+         applicationActivities: []
+       )
+       present(shareVc, animated: true, completion: nil)
+    }
+    
+
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+      if
+        recognizedText.count > 0 {
+        return true
+      }
+      
+      let alert = UIAlertController(title: "All Information Not Provided", message: "You must supply all information to create a PDF.", preferredStyle: .alert)
+      alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+      present(alert, animated: true, completion: nil)
+      
+      return false
+    }
+    
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         let image = scan.imageOfPage(at: 0)
             let handler = VNImageRequestHandler(cgImage: image.cgImage!, options: [:])
@@ -54,6 +86,5 @@ class DocProfileViewController: UIViewController, VNDocumentCameraViewController
             }
             controller.dismiss(animated: true)
     }
-    
     
 }

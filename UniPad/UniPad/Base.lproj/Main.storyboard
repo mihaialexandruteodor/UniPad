@@ -71,10 +71,17 @@
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTj-bb-B9I">
-                                <rect key="frame" x="16" y="816" width="382" height="30"/>
+                                <rect key="frame" x="16" y="816" width="112" height="30"/>
                                 <state key="normal" title="Scan For Details"/>
                                 <connections>
                                     <action selector="scanDocument:" destination="ceD-P0-O5j" eventType="touchUpInside" id="yJk-NN-JDy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLo-yZ-IWB">
+                                <rect key="frame" x="326" y="816" width="72" height="30"/>
+                                <state key="normal" title="Share PDF"/>
+                                <connections>
+                                    <action selector="sharePDF:" destination="ceD-P0-O5j" eventType="touchUpInside" id="efF-gY-Hmw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,9 +91,10 @@
                             <constraint firstItem="JTj-bb-B9I" firstAttribute="top" secondItem="cLg-ji-142" secondAttribute="bottom" constant="16" id="0SM-eE-tfx"/>
                             <constraint firstItem="roX-Iu-Suq" firstAttribute="top" secondItem="gNt-1g-wpb" secondAttribute="top" constant="16" id="CH5-Fm-kza"/>
                             <constraint firstItem="gNt-1g-wpb" firstAttribute="trailing" secondItem="roX-Iu-Suq" secondAttribute="trailing" constant="16" id="DVX-bc-O9U"/>
+                            <constraint firstItem="gNt-1g-wpb" firstAttribute="bottom" secondItem="yLo-yZ-IWB" secondAttribute="bottom" constant="16" id="E4q-DX-h6b"/>
                             <constraint firstItem="gNt-1g-wpb" firstAttribute="trailing" secondItem="cLg-ji-142" secondAttribute="trailing" constant="16" id="H8b-Hr-0OM"/>
                             <constraint firstItem="cLg-ji-142" firstAttribute="leading" secondItem="gNt-1g-wpb" secondAttribute="leading" constant="16" id="IgA-d1-3pX"/>
-                            <constraint firstItem="gNt-1g-wpb" firstAttribute="trailing" secondItem="JTj-bb-B9I" secondAttribute="trailing" constant="16" id="WFd-70-bf3"/>
+                            <constraint firstItem="gNt-1g-wpb" firstAttribute="trailing" secondItem="yLo-yZ-IWB" secondAttribute="trailing" constant="16" id="Tbe-pM-c4r"/>
                             <constraint firstItem="roX-Iu-Suq" firstAttribute="leading" secondItem="gNt-1g-wpb" secondAttribute="leading" constant="16" id="aE3-mZ-6dT"/>
                             <constraint firstItem="cLg-ji-142" firstAttribute="top" secondItem="roX-Iu-Suq" secondAttribute="bottom" constant="16" id="ewz-rz-la5"/>
                             <constraint firstItem="JTj-bb-B9I" firstAttribute="leading" secondItem="gNt-1g-wpb" secondAttribute="leading" constant="16" id="gvV-hv-dNw"/>

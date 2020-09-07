@@ -2,7 +2,10 @@
      alt="UniPad Icon"
      style="float: left; margin-right: 10px;"
      width="40" height="40" />
+     
 # UniPad
+❗️❗️❗️ CURRENTLY IN DEVELOPMENT ❗️❗️❗️
+
 IOS app for taking quick notes using the camera and the Swift OCR kit
 
 
@@ -11,9 +14,9 @@ Thanks:
 Vision Framework Tutorial, served as the base of the app:
 https://www.appcoda.com/animal-recognition-vision-framework/
 
-Codepath, Custom Camera View:  
+Bill Morefield, Creating a PDF in Swift:  
 
-https://guides.codepath.com/ios/Creating-a-Custom-Camera-View
+https://guides.codepath.com/ios/Creating-a-Custom-Camera-Viewhttps://www.raywenderlich.com/4023941-creating-a-pdf-in-swift-with-pdfkit#toc-anchor-012
 
 Raúl Ferrer, IOS OCR:
 
