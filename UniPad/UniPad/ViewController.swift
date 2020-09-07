@@ -24,13 +24,6 @@ class ViewController: UIViewController {
         let configuration = ARWorldTrackingConfiguration()
         previewView.session.run(configuration)
     }
-
-    @IBAction func snap(_ sender: Any) {
-        let currentFrame = previewView.snapshot()
-        let vc = self.storyboard?.instantiateViewController(identifier: "Profile") as! DocProfileViewController
-        vc.docImage = currentFrame
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
     
 }
 

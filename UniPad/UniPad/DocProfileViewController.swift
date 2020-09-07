@@ -77,8 +77,9 @@ class DocProfileViewController: UIViewController, VNDocumentCameraViewController
     }
     
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
-        let image = scan.imageOfPage(at: 0)
-            let handler = VNImageRequestHandler(cgImage: image.cgImage!, options: [:])
+        docImage = scan.imageOfPage(at: 0)
+        docImageView.image = docImage
+            let handler = VNImageRequestHandler(cgImage: docImage.cgImage!, options: [:])
             do {
                 try handler.perform([textRecognitionRequest])
             } catch {

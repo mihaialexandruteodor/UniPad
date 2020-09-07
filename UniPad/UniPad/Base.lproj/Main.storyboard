@@ -9,45 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UniPad" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UE-fH-l4q">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91v-8n-gqS">
-                                <rect key="frame" x="166" y="756" width="82" height="82"/>
-                                <state key="normal" image="Action button"/>
-                                <connections>
-                                    <action selector="snap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zE3-et-kSw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="91v-8n-gqS" secondAttribute="bottom" constant="24" id="31O-Km-eVc"/>
-                            <constraint firstAttribute="bottom" secondItem="3UE-fH-l4q" secondAttribute="bottom" id="BWy-2a-6Kq"/>
-                            <constraint firstItem="3UE-fH-l4q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EnM-LJ-t6D"/>
-                            <constraint firstItem="91v-8n-gqS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KGc-to-4uO"/>
-                            <constraint firstItem="3UE-fH-l4q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RVg-a4-lmF"/>
-                            <constraint firstItem="3UE-fH-l4q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rhp-OD-WPe"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="jbd-OM-hBw"/>
-                    <connections>
-                        <outlet property="previewView" destination="3UE-fH-l4q" id="QkR-DA-iGA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="852.17391304347836" y="137.94642857142856"/>
-        </scene>
         <!--Doc Profile View Controller-->
         <scene sceneID="nbK-rw-4VR">
             <objects>
@@ -57,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="roX-Iu-Suq">
-                                <rect key="frame" x="16" y="60" width="382" height="624"/>
+                                <rect key="frame" x="16" y="156" width="382" height="528"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="OCR recognized data will go here" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLg-ji-142">
                                 <rect key="frame" x="16" y="700" width="382" height="100"/>
@@ -122,16 +83,15 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pHx-b5-eMO"/>
+                        <segue destination="ceD-P0-O5j" kind="relationship" relationship="rootViewController" id="zTd-ZQ-eKx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTg-2Q-QsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
+            <point key="canvasLocation" x="916" y="123"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Action button" width="82" height="82"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
