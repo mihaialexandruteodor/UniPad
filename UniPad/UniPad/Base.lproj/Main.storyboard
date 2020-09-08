@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="roX-Iu-Suq">
-                                <rect key="frame" x="16" y="156" width="382" height="528"/>
+                                <rect key="frame" x="16" y="180" width="382" height="504"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="OCR recognized data will go here" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLg-ji-142">
                                 <rect key="frame" x="16" y="700" width="382" height="100"/>
@@ -45,13 +45,26 @@
                                     <action selector="sharePDF:" destination="ceD-P0-O5j" eventType="touchUpInside" id="efF-gY-Hmw"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter a title here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1IW-j2-Ubt">
+                                <rect key="frame" x="246" y="140" width="135" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vx2-VL-lQl">
+                                <rect key="frame" x="56" y="147" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNt-1g-wpb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JTj-bb-B9I" firstAttribute="top" secondItem="cLg-ji-142" secondAttribute="bottom" constant="16" id="0SM-eE-tfx"/>
-                            <constraint firstItem="roX-Iu-Suq" firstAttribute="top" secondItem="gNt-1g-wpb" secondAttribute="top" constant="16" id="CH5-Fm-kza"/>
+                            <constraint firstItem="roX-Iu-Suq" firstAttribute="top" secondItem="1IW-j2-Ubt" secondAttribute="bottom" constant="6" id="5RT-WP-nnY"/>
+                            <constraint firstItem="roX-Iu-Suq" firstAttribute="top" secondItem="vx2-VL-lQl" secondAttribute="bottom" constant="12" id="67n-SJ-ryH"/>
                             <constraint firstItem="gNt-1g-wpb" firstAttribute="trailing" secondItem="roX-Iu-Suq" secondAttribute="trailing" constant="16" id="DVX-bc-O9U"/>
+                            <constraint firstItem="gNt-1g-wpb" firstAttribute="trailing" secondItem="1IW-j2-Ubt" secondAttribute="trailing" constant="33" id="Df7-Km-LnP"/>
                             <constraint firstItem="gNt-1g-wpb" firstAttribute="bottom" secondItem="yLo-yZ-IWB" secondAttribute="bottom" constant="16" id="E4q-DX-h6b"/>
                             <constraint firstItem="gNt-1g-wpb" firstAttribute="trailing" secondItem="cLg-ji-142" secondAttribute="trailing" constant="16" id="H8b-Hr-0OM"/>
                             <constraint firstItem="cLg-ji-142" firstAttribute="leading" secondItem="gNt-1g-wpb" secondAttribute="leading" constant="16" id="IgA-d1-3pX"/>
@@ -59,6 +72,8 @@
                             <constraint firstItem="roX-Iu-Suq" firstAttribute="leading" secondItem="gNt-1g-wpb" secondAttribute="leading" constant="16" id="aE3-mZ-6dT"/>
                             <constraint firstItem="cLg-ji-142" firstAttribute="top" secondItem="roX-Iu-Suq" secondAttribute="bottom" constant="16" id="ewz-rz-la5"/>
                             <constraint firstItem="JTj-bb-B9I" firstAttribute="leading" secondItem="gNt-1g-wpb" secondAttribute="leading" constant="16" id="gvV-hv-dNw"/>
+                            <constraint firstItem="roX-Iu-Suq" firstAttribute="top" secondItem="gNt-1g-wpb" secondAttribute="top" constant="40" id="p2S-3L-WfL"/>
+                            <constraint firstItem="vx2-VL-lQl" firstAttribute="leading" secondItem="gNt-1g-wpb" secondAttribute="leading" constant="56" id="xTN-uk-rPl"/>
                             <constraint firstItem="gNt-1g-wpb" firstAttribute="bottom" secondItem="JTj-bb-B9I" secondAttribute="bottom" constant="16" id="yBP-Th-XUH"/>
                         </constraints>
                     </view>
@@ -66,6 +81,7 @@
                     <connections>
                         <outlet property="docDetailsTextView" destination="cLg-ji-142" id="KAe-F0-Z31"/>
                         <outlet property="docImageView" destination="roX-Iu-Suq" id="XUH-TQ-zQF"/>
+                        <outlet property="titleTextBox" destination="1IW-j2-Ubt" id="QeE-ZX-2rd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ux1-6x-bzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

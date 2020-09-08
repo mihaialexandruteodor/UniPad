@@ -10,10 +10,12 @@ import Vision
 import VisionKit
 import PDFKit
 
-class DocProfileViewController: UIViewController, VNDocumentCameraViewControllerDelegate  {
+class DocProfileViewController: UIViewController, VNDocumentCameraViewControllerDelegate,UITextFieldDelegate  {
 
     @IBOutlet var docImageView: UIImageView!
     @IBOutlet var docDetailsTextView: UITextView!
+    
+    @IBOutlet weak var titleTextBox: UITextField!
     
     var docImage: UIImage!
     var textRecognitionRequest = VNRecognizeTextRequest()
@@ -24,6 +26,7 @@ class DocProfileViewController: UIViewController, VNDocumentCameraViewController
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.title = "New Document"
         docImageView.image = docImage
+        titleTextBox.delegate = self
         
         textRecognitionRequest = VNRecognizeTextRequest(completionHandler: { (request, error) in
                 if let results = request.results, !results.isEmpty {
@@ -39,6 +42,11 @@ class DocProfileViewController: UIViewController, VNDocumentCameraViewController
                 }
         })}
     
+    func textFieldShouldReturn(_ titleTextBox: UITextField) -> Bool {   //delegate method
+        titleTextBox.resignFirstResponder()
+      return true
+    }
+    
     @IBAction func scanDocument(_ sender: Any) {
         let documentCameraViewController = VNDocumentCameraViewController()
          documentCameraViewController.delegate = self
@@ -47,13 +55,13 @@ class DocProfileViewController: UIViewController, VNDocumentCameraViewController
     
     @IBAction func sharePDF(_ sender: Any) {
         let pdfCreator = PDFCreator(
-         title: "test",
+            title: titleTextBox.text!,
          body: recognizedText,
          image: docImage,
          contact: "github.com/mihaialexandruteodor"
             
        )
-       let pdfData = pdfCreator.createFlyer()
+       let pdfData = pdfCreator.prepareData()
        let shareVc = UIActivityViewController(
          activityItems: [pdfData],
          applicationActivities: []
