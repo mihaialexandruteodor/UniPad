@@ -7,7 +7,7 @@
 
 IOS app for taking quick notes using the camera and saving them as PDF, along with the OCR recognition of the text detected
 
-![](https://github.com/mihaialexandruteodor/UniPad/blob/master/promo.GIF)
+![](https://github.com/mihaialexandruteodor/mihaialexandruteodor/blob/master/repoImages/UniPad/promo.gif?raw=true)
 
 
 Thanks:
